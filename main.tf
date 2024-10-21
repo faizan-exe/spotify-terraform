@@ -15,13 +15,12 @@ provider "spotify" {
 }
 
 data "spotify_search_track" "by_artist" {
-  artist = "Dolly Parton"
-  #  album = "Jolene"
-  #  name  = "Early Morning Breeze"
+  artist = "Talha Anjum"
+  #  album = "For Da Dogs"
 }
 
 resource "spotify_playlist" "playlist" {
-  name        = "Terraform Summer Playlist"
+  name        = "Terraform Playlist - Talha Anjum"
   description = "This playlist was created by Terraform"
   public      = true
 
